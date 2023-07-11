@@ -4,6 +4,7 @@ import { Button } from './components/Button';
 import { Profile } from './components/Profile';
 import { Country } from './components/Country';
 import { Card } from './components/Card';
+import { TodoItem } from './components/TodoItem';
 
 export const App = () => {
   return (
@@ -28,6 +29,12 @@ export const App = () => {
         }}
       />
       </Card>
+      <hr />
+      <ul>
+        <TodoItem name='Reactの学習' isToday={true} isCompoleted={true} />
+        <TodoItem name='HTMLの復習' isToday={true} isCompoleted={false} />
+        <TodoItem name='React Hooksの予習' isToday={false} isCompoleted={false} />
+      </ul>
     </div>
   )
 }
