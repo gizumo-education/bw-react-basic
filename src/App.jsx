@@ -6,8 +6,12 @@ import { Country } from './components/Country'
 import { Card } from './components/Card'
 import { TodoItem } from './components/TodoItem'
 import { LanguageList } from './components/LanguageList'
+import { AlertButton } from './components/AlertButton'
 
 export const App = () => {
+  const handleAlert = () => {
+    alert('アラート');
+  }
   return (
     <div>
       <img src={reactLogo} className={styles['react-logo']} />
@@ -20,7 +24,6 @@ export const App = () => {
       <Button />
       <hr />
       <Profile />
-      <hr />
       <hr />
       <Card>
         <Country
@@ -38,6 +41,10 @@ export const App = () => {
       </ul>
       <hr />
       <LanguageList />
+      <hr />
+      <AlertButton
+        setAlert={handleAlert}
+      />
     </div>
   )
 }
