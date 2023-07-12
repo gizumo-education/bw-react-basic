@@ -42,9 +42,7 @@ export const App = () => {
       <hr />
       <LanguageList />
       <hr />
-      <AlertButton
-        setAlert={handleAlert}
-      />
+      <AlertButton setAlert={handleAlert} />
     </div>
   )
 }
