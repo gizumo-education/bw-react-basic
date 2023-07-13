@@ -8,6 +8,7 @@ import { TodoItem } from './components/TodoItem/index.jsx';
 import { LanguageList } from './components/LanguageList/index.jsx';
 import { AlertButton } from './components/AlertButton/index.jsx';
 import { InputField } from './components/InputField/index.jsx';
+import { CharacterImage } from './components/CharacterImage/index.jsx';
 
 
 export const App = () => {
@@ -50,6 +51,9 @@ export const App = () => {
       <hr />
       {/* InputFieldコンポーネントのタグをここに記述 */}
       <InputField></InputField>
+      <hr />
+      {/* CharacterImageコンポーネントのタグをここに記述 */}
+      <CharacterImage></CharacterImage>
     </div>
   )
 }
