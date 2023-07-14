@@ -14,27 +14,28 @@ import PropTypes from 'prop-types'
 import styles from './index.module.css'
 
 export const TodoItem = ({ name, isToday, isCompleted }) => {
-  if (isToday) {
-    if (isCompleted) {
-      return (
-        <li className={styles.name}>
-          {name} <span >✔︎</span>
-        </li>
-      );
-    } else {
-      return <li className={styles.name}>{name}</li>;
-    }
-  } else {
-    return null;
-  }
+  return isToday && <li className={styles.name }>{isCompleted ? name +'✔︎': name }</li>
+  // if (isToday) {
+  //   if (isCompleted) {
+  //     return (
+  //       <li className={styles.name}>
+  //         {name} <span >✔︎</span>
+  //       </li>
+  //     );
+  //   } else {
+  //     return <li className={styles.name}>{name}</li>;
+  //   }
+  // } else {
+  //   return null;
+  // }
 };
 
 TodoItem.propTypes = {
   name: PropTypes.string.isRequired,
   isToday: PropTypes.bool.isRequired,
   isCompleted: PropTypes.bool.isRequired,
+  
 }
-
 
 
 // {isToday ? <className /> : <TodoItem />}
