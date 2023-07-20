@@ -19,9 +19,9 @@ export const Country = ({ info, width, height}) => {
   )
 }
 
-Country.PropTypes = {
-  imgInfo: PropTypes.exact({
-    url: PropTypes.string.isRequired,
+Country.propTypes = {
+  info: PropTypes.exact({
+    imgUrl: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired
   }).isRequired,
   width: PropTypes.number,
