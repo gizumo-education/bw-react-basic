@@ -6,6 +6,7 @@ import { Country } from './components/Country/index'
 import { Card } from './components/Card/index'
 import { TodoItem } from './components/TodoItem/index'
 import { LanguageList } from './components/LanguageList/index'
+import { AlertButton } from './components/AlertButton/index'
 
 export const App = () => {
   return (
@@ -37,6 +38,8 @@ export const App = () => {
       </ul>
       <hr />
       <LanguageList />
+      <hr />
+      <AlertButton />
     </div>
 
   )

@@ -18,7 +18,7 @@ export const LanguageList = () => {
           </li>
         ))
       }
-    </ul >
+    </ul>
 
   )
 }
