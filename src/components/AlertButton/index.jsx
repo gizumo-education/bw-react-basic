@@ -1,5 +1,14 @@
 import styles from './index.module.css'
 
 export const AlertButton = () => {
-  return <button className={styles.button}>Alert</button>
+  const handleAlertClick = () => {
+    alert('alert');
+  };
+
+  return (
+     <button className={styles.button} onClick={handleAlertClick}>
+      Alert</button>
+  )
 }
+
+export default AlertButton;

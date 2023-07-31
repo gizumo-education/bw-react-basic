@@ -1,12 +1,14 @@
 import axios from 'axios'
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 
 export const CharacterImage = () => {
   const [imgUrl, setImgUrl] = useState('')
 
-  axios.get('https://pokeapi.co/api/v2/pokemon/1').then((res) => {
+  useEffect(() => {
+    axios.get('https://pokeapi.co/api/v2/pokemon/1').then((res) => {
     setImgUrl(res.data.sprites.other['official-artwork']['front_default'])
   })
+}, []);
 
   return (
     <>
@@ -14,3 +16,5 @@ export const CharacterImage = () => {
     </>
   )
 }
+
+export default CharacterImage;
