@@ -18,5 +18,3 @@ export const LanguageList = () => {
     </ul>
   )
 }
-
-export default LanguageList;

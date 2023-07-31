@@ -14,5 +14,3 @@ Card.propTypes = {
 Card.defaultProps = {
   children: null
 }
-
-export default Card;

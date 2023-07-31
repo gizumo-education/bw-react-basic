@@ -16,10 +16,3 @@ TodoItem.propTypes = {
   isToday: PropTypes.bool.isRequired,
   isCompleted: PropTypes.bool.isRequired,
 }
-
-export default TodoItem;
-
-
-
-
-

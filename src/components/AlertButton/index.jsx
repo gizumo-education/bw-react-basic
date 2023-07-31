@@ -10,5 +10,3 @@ export const AlertButton = () => {
       Alert</button>
   )
 }
-
-export default AlertButton;
