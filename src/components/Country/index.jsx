@@ -17,7 +17,7 @@ export const Country = ({ Info, name }) => {
   )
 }
 
-// 型を明示的にする記述を追加
+// 型を明示的にする記述を追加する
 // > 1_prop-typesライブラリのインポート→ 17行目
 
 // > 2_コンポーネント名.propTypesにpropsの型を定義する
