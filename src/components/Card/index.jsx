@@ -1,11 +1,16 @@
 import PropTypes from 'prop-types'
 import styles from './index.module.css'
 
-export const Card = () => {
+// children(=Country)を受け取る側
+export const Card = ({children}) => {
   return (
-    <div className={styles.card}></div>
+    <div className={styles.card}>
+      {children}
+    </div>
   )
 }
+
+
 
 Card.propTypes = {
   children: PropTypes.node
