@@ -70,7 +70,10 @@ export const App = () => {
       <>
         <LanguageList />
       </>
+
+      <hr />{/* 区切り線 */}
     </div>
 
+    
   )
 }
