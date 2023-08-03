@@ -2,10 +2,7 @@ import PropTypes from "prop-types";
 import styles from "./index.module.css";
 
 export const TodoItem = ({ name, isToday, isCompleted }) => {
-  if (!isToday) {
-    return null;
-  }
-  if (!isCompleted) {
+  if (!isToday || !isCompleted) {
     return null;
   }
   return <li className={styles.name}>{name}✔️</li>;
