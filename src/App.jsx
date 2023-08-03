@@ -7,6 +7,9 @@ import { Country } from './components/Country/index';
 import { Card } from './components/Card/index';
 import { TodoItem } from './components/TodoItem/index';
 import { LanguageList } from './components/LanguageList/index';
+import { AlertButton } from './components/AlertButton/index';
+import { InputField } from './components/InputField/index';
+import { CharacterImage } from './components/CharacterImage/index';
 // ※ src={reactLogo} の書き方はJSX構文の書き方 後ほど...
 // ※ className={styles['react-logo']} の記述はHTMLのclassに当たる書き方 後ほど...
 export const App = () => {
@@ -57,8 +60,8 @@ export const App = () => {
       </>
 
       <hr />{/* 区切り線 */}
+
       <>
-        <TodoItem />
         <ul>
           {/* 規定記述 */}
           <TodoItem name='Reactの学習' isToday={true} isCompleted={true} />
@@ -72,8 +75,22 @@ export const App = () => {
       </>
 
       <hr />{/* 区切り線 */}
+      <>
+        <AlertButton />
+      </>
+
+      <hr />{/* 区切り線 */}
+      <>
+      <InputField/>
+      </>
+
+      <hr />{/* 区切り線 */}
+      <>
+        <CharacterImage />
+      </>
+
     </div>
 
-    
+
   )
 }
