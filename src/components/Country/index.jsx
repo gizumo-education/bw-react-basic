@@ -12,7 +12,7 @@ export const Country = ({ Info, name }) => {
       <img
         src={ Info.imgUrl }
       />
-      <p className={styles.name}>{ Info.name}</p>
+      <p className={styles.name}>{ Info.name }</p>
     </>
   )
 }
