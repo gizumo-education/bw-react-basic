@@ -10,7 +10,7 @@ import { AlertButton } from "./components/AlertButton";
 import { InputField } from "./components/InputField";
 import { CharacterImage } from "./components/CharacterImage";
 
-export const App = () => {
+export const App = ({}) => {
   return (
     <div>
       <img src={reactLogo} className={styles["react-logo"]} />
@@ -39,6 +39,7 @@ export const App = () => {
             name: "アメリカ",
           }}
           width={150}
+          height={100}
         />
       </Card>
       <hr />
