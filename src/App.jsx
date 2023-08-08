@@ -1,5 +1,6 @@
 import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
+import { Button } from './components/Button';
 
 <div>
       <img src={reactLogo} className={styles['react-logo']} />
@@ -13,6 +14,12 @@ import styles from './App.module.css'
         <div>
           <img src={reactLogo} className={styles['react-logo']} />
           <h1>Hello React!</h1>
+          <hr />
+          <Button className={styles.button}>Button</Button>
+          <Button className={styles.button}>Button</Button>
+          <Button className={styles.button}>Button</Button>
         </div>
       )
     };
+  
+    
