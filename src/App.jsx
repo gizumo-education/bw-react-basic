@@ -38,6 +38,12 @@ export const App = () => {
       />
     </Card>
     <hr/>
+    <ul>
+      <TodoItem name='Reactの学習' isToday={true} isCompleted={true} />
+      <TodoItem name='HTMLの復習' isToday={true} isCompleted={true} />
+      <TodoItem name='React Hooksの予習' isToday={true} isCompleted={false} />
+    </ul>
+    <hr/>
     </div>
   )
 }
