@@ -1,6 +1,5 @@
 import styles from './index.module.css'
 import PropTypes from 'prop-types'
-import { Card } from '../Card';
 
 export const Country = ({ info, width, height }) => {
   return (
