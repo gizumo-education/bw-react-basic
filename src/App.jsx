@@ -51,6 +51,9 @@ export const App = () => {
 
       <hr />
       <AlertButton />
+
+      <hr />
+      <InputField />
     </div>
   );
 }
