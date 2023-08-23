@@ -48,6 +48,9 @@ export const App = () => {
 
       <hr />
       <LanguageList />
+
+      <hr />
+      <AlertButton />
     </div>
   );
 }
