@@ -1,7 +1,7 @@
 import styles from './index.module.css'
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'    // ライブラリをインポート
 
-// Countryコンポーネント(子)
+// Countryコンポーネント(子)でpropsを受け取る
 export const Country = ({info,width,height}) => {
   return (
     <div>
@@ -15,7 +15,8 @@ export const Country = ({info,width,height}) => {
   )
 }
 
-Country.PropTypes = {
+// propsの型を指定する
+Country.propTypes = {
   info:PropTypes.exact({
     imgUrl:PropTypes.string.isRequired,
     name:PropTypes.string.isRequired
