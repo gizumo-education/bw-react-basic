@@ -18,7 +18,7 @@ Country.propTypes = {
   }).isRequired,
   // 任意でwidth,height propsを渡した場合、number型の値を渡すことを定義
   width: PropTypes.number,
-  height: PropTypes.numberx
+  height: PropTypes.number
 }
 
 // propsのデフォルト値
