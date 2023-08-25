@@ -37,7 +37,9 @@ export const App = () => {
         <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
       </ul>
       <hr />
-      
+      {/* リストレンダー練習問題 */}
+      <LanguageList />
+      <hr />
     </div>
   )
 }
