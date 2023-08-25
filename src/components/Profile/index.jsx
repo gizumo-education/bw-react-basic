@@ -10,8 +10,9 @@ export const Profile = () => {
   return (
     <>
       <img src={imgUrl} className={styles.avatar} />
-      <p className={styles.sentence}>I am John</p>
-      <p className={getBirthDay()}>BirthDay:2023/7/7 </p>
+      {/* テキストではなく変数名で指定する */}
+      <p className={styles.sentence}>{name}</p>
+      <p className={styles.sentence}>{getBirthDay()}</p>
     </>
   )
 }
