@@ -2,6 +2,9 @@ import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
 import { Button } from './components/Button';
 import { Profile } from './components/Profile';
+import { Country } from './components/Country';
+import { Card } from './components/Card';
+
 
 <div>
       <img src={reactLogo} className={styles['react-logo']} />
@@ -21,6 +24,10 @@ import { Profile } from './components/Profile';
           <Button className={styles.button}>Button</Button>
           <hr />
           <Profile/>
+          <hr />
+          <Card >
+            <Country info={{imgUrl:'https://www.civillink.net/sozai/kokki100/pics2654.gif',name:'アメリカ'}}/>
+          </Card>
         </div>
       )
     };
