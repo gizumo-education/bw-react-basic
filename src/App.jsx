@@ -6,6 +6,7 @@ import { Country } from './components/Country';
 import { Card } from './components/Card';
 import { TodoItem } from './components/TodoItem';
 import { LanguageList } from './components/LanguageList';
+import { AlertButton } from './components/AlertButton';
 
 <div>
       <img src={reactLogo} className={styles['react-logo']} />
@@ -37,6 +38,8 @@ import { LanguageList } from './components/LanguageList';
           </ul>
           <hr />
           <LanguageList></LanguageList>
+          <hr />
+          <AlertButton></AlertButton>
         </div>
       )
     };
