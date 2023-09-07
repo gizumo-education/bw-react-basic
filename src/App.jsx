@@ -7,6 +7,7 @@ import { Card } from './components/Card';
 import { TodoItem } from './components/TodoItem';
 import { LanguageList } from './components/LanguageList';
 import { AlertButton } from './components/AlertButton';
+import { InputField } from './components/InputField';
 
 <div>
       <img src={reactLogo} className={styles['react-logo']} />
@@ -40,6 +41,8 @@ import { AlertButton } from './components/AlertButton';
           <LanguageList></LanguageList>
           <hr />
           <AlertButton></AlertButton>
+          <hr />
+          <InputField></InputField>
         </div>
       )
     };
