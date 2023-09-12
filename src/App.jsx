@@ -10,12 +10,7 @@ import { AlertButton } from './components/AlertButton';
 import { InputField } from './components/InputField';
 import { CharacterImage } from './components/CharacterImage';
 
-<div>
-      <img src={reactLogo} className={styles['react-logo']} />
-      <h1>Hello React!</h1>
 
-      {/* 以下に練習問題の回答を記述してください */}
-    </div>
     
     export const App = () => {
       return (
