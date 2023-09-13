@@ -5,6 +5,10 @@ import { Profile } from "./components/Profile";
 import { Card } from "./components/Card";
 import { Country } from "./components/Country";
 import { TodoItem } from "./components/TodoItem";
+import { LanguageList } from "./components/LanguageList";
+import { AlertButton } from "./components/AlertButton";
+import { InputField } from "./components/InputField";
+import { CharacterImage } from "./components/CharacterImage";
 export const App = () => {
   return (
     <div>
@@ -47,6 +51,22 @@ export const App = () => {
           isCompleted={false}
         />
       </ul>
+
+      <hr />
+
+      <LanguageList />
+
+      <hr />
+
+      <AlertButton />
+
+      <hr />
+
+      <InputField />
+
+      <hr />
+
+      <CharacterImage />
     </div>
   );
 };
