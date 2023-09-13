@@ -10,7 +10,7 @@ export const LanguageList = () => {
   return (
     <ul className={styles.wrapper}>
       {
-        languages.map((language) => (
+        languages.map((language) => ( /*map()を使用して配列を繰り返し処理。繰り返し処理中に配列内の要素が順にlanguageに入ってくる。 Reactはkeyを参照して何が起こったかを推測,どの要素がどのコンポーネントに対応するかを判断*/
           <li className={styles.item} key={language.id}>
             <img src={language.imgUrl} />
             <p>{language.name}</p>

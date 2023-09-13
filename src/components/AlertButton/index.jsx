@@ -5,5 +5,7 @@ export const AlertButton = () => {
     alert('クリックされました！')
   }
 
-  return <button className={styles.button} onClick={ handleAlert }>Alert</button>
+  /*イベントハンドラとはユーザが画面上で行った操作をトリガーにして独自の処理を記述することができるJS関数*/
+
+  return <button className={styles.button} onClick={handleAlert}>Alert</button>
 }
