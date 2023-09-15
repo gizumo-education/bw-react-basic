@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 export const Country = ({info}) => {
   return (
     <div>
-      <img src={info.imgUrl} width='150px' height='100px'/>
+      <img src={info.imgUrl} />
       <p className={styles.name}>{info.name}</p>
     </div>
   )
@@ -13,7 +13,9 @@ export const Country = ({info}) => {
 Country.propTypes = {
   info:PropTypes.exact({
     imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
-    name: 'アメリカ'
+    name: 'アメリカ',
+    width:150,
+    height:100
   })
 };
 Country.defaultProps = {
