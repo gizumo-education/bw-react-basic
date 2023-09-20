@@ -27,7 +27,7 @@ export const App = () => {
         <Profile />
 
         <Country
-        info = {{
+        info={{
           imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
           name: 'アメリカ'
         }} />
@@ -35,7 +35,7 @@ export const App = () => {
       <hr />
         <Card>
           <Country
-            info = {{
+            info={{
               imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
               name: 'アメリカ'
             }} />

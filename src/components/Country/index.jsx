@@ -14,7 +14,7 @@ Country.propTypes = {
   info:PropTypes.exact({
     imgUrl: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired
-  }),
+  }).isRequired,
   with: PropTypes.number,
   height: PropTypes.number
 }

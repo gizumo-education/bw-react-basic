@@ -6,10 +6,11 @@ import styles from './index.module.css'
 // }
 
 export const TodoItem = ({ name, isToday, isCompleted }) => {
-  if (!isToday) {
-    return null
-  }
-  return <li className={styles.name}>{name} {isCompleted ? '✔︎' : null}</li>
+  // if (!isToday) {
+  //   return null
+  // }
+
+  return isToday && <li className={styles.name}>{name} {isCompleted ? '✔︎' : null}</li>
 }
 
 TodoItem.propTypes = {
