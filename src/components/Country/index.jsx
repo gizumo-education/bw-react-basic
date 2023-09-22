@@ -12,10 +12,8 @@ export const Country = ({info}) => {
 
 Country.propTypes = {
   info:PropTypes.exact({
-    imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
-    name: 'アメリカ',
-    width:150,
-    height:100
+    imgUrl:PropTypes.string.isRequired,
+    name:PropTypes.string.isRequired
   })
 };
 Country.defaultProps = {
