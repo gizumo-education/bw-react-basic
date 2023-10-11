@@ -3,11 +3,12 @@ import styles from './App.module.css'
 
 export const App = () => {
     return (
-        <div>
-      <img src={reactLogo} className={styles['react-logo']} />
-      <h1>Hello React!</h1>
+      <div>
+        <img src={reactLogo} className={styles['react-logo']} />
+        < h1>Hello React!</h1>
 
-      {/* 以下に練習問題の回答を記述してください */}
-    </div>
+        {/* 以下に練習問題の回答を記述してください */}
+
+      </div>
     )
 }
