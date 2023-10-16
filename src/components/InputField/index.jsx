@@ -3,13 +3,11 @@ import { useState } from 'react'
 
 
 export const InputField = () => {
-  let [value, setValue] = useState('');
-  const setValueFn = anyString=> setValue(value = anyString);
-  
-  
+  const [value, setValue] = useState('');
+
   return (
     <>
-      <input onChange={(e) => setValueFn(e.target.value)} className={styles.input} placeholder='任意の文字を入力' />
+      <input onChange={ (e) => setValue(e.target.value) } className={styles.input} placeholder='任意の文字を入力' />
       <p>入力文字：{value}</p>
     </>
   )
