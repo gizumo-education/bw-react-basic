@@ -9,6 +9,7 @@ import { LanguageList } from './components/LanguageList'
 import ( LanguageList )
 import { AlertButton } from './components/AlertButton'
 import { InputField } from './components/InputField'
+import { CharacterImage } from './components/CharacterImage'
 
 export const App = () => {
   return (
@@ -56,7 +57,9 @@ export const App = () => {
 
       <InputField />
 
-
+      <hr />
+      
+      <CharacterImage />
 
     </div>
   )
