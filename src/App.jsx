@@ -8,6 +8,7 @@ import { TodoItem } from './components/TodoItem'
 import { LanguageList } from './components/LanguageList'
 import ( LanguageList )
 import { AlertButton } from './components/AlertButton'
+import { InputField } from './components/InputField'
 
 export const App = () => {
   return (
@@ -49,7 +50,11 @@ export const App = () => {
 
       <hr />
 
-      <AlertButton hoge = {'埼京線はhoge'}/>
+      <AlertButton hoge = '埼京線はhoge'/>
+
+      <hr />
+
+      <InputField />
 
 
 
