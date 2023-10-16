@@ -1,10 +1,9 @@
 import styles from './index.module.css'
 
 
-const hogeAlert = ({hoge = 'hoge'}) => {
-  alert(hoge);
-}
 
-export const AlertButton = () => {
+export const AlertButton = ({hoge}) => {
+  const hogeAlert = () =>  alert(hoge);
+
   return <button className={styles.button} onClick={hogeAlert}>Alert</button>
 }
