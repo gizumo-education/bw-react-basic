@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
 import styles from './index.module.css'
 
-export const Card = ({children}) => {
+export const Card = ({ children }) => {
   return (
     <div className={styles.card}>
-      {children}
+      { children }
     </div>
   )
 }
