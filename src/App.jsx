@@ -6,7 +6,6 @@ import { Country } from './components/Country'
 import { Card } from './components/Card'
 import { TodoItem } from './components/TodoItem'
 import { LanguageList } from './components/LanguageList'
-import ( LanguageList )
 import { AlertButton } from './components/AlertButton'
 import { InputField } from './components/InputField'
 import { CharacterImage } from './components/CharacterImage'
@@ -29,7 +28,7 @@ export const App = () => {
 
       <hr />
       <Card>
-        <Country 
+        <Country
           info={{
             imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
             name: 'アメリカ'
@@ -64,5 +63,3 @@ export const App = () => {
     </div>
   )
 }
-
-<App />
