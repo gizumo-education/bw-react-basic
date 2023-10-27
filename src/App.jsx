@@ -50,7 +50,6 @@ export const App = () => {
           <TodoItem name='HTMLの復習' isToday={true} isCompleted={false} />
           <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
         </ul>
-        <TodoItem />
 
         <hr />
         <LanguageList />
