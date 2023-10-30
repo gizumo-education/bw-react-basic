@@ -2,10 +2,10 @@ import styles from './index.module.css'
 import { useState } from 'react'
 
 export const InputField = () => {
-  const [text, InputText] = useState('')
+  const [text, SetText] = useState('')
 
   const handleChange = (e) => {
-    InputText(() => e.target.value)
+    SetText(() => e.target.value)
   }
 
   return (
