@@ -11,7 +11,7 @@ export const TodoItem = ({ name, isToday, isCompleted }) => {
       ) : isToday ? (
         name
       ) : null}
-      </li>
+    </li>
   );
 };
 
