@@ -6,8 +6,7 @@ import { Country } from './components/Country'
 import { Card } from './components/Card'
 import { TodoItem } from './components/TodoItem'
 import { LanguageList } from './components/LanguageList'
-
-
+import { AlertButton } from './components/AlertButton'
 
 
 // index.jsからnamed exportでエクスポートしたので、{}をつけて変数Buttonをインポート
@@ -50,6 +49,8 @@ export const App = () => {
 
       <LanguageList />
 
+      <hr />
+      <AlertButton />
     </div>
   )
 }
