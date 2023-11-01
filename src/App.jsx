@@ -7,6 +7,7 @@ import { Card } from './components/Card'
 import { TodoItem } from './components/TodoItem'
 import { LanguageList } from './components/LanguageList'
 import { AlertButton } from './components/AlertButton'
+import { InputField } from './components/InputField'
 
 
 export const App = () => {
@@ -45,6 +46,9 @@ export const App = () => {
         {/* 以下に練習問題の回答を記述してください */}
         <hr />
         <AlertButton/>
+        {/* 以下に練習問題の回答を記述してください */}
+        <hr />
+        <InputField/>
         {/* 以下に練習問題の回答を記述してください */}
       </div>
   )
