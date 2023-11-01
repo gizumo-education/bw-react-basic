@@ -9,20 +9,19 @@ import { LanguageList } from './components/LanguageList'
 import { AlertButton } from './components/AlertButton'
 import { InputField } from './components/InputField'
 import { CharacterImage } from './components/CharacterImage'
-
-
-// index.jsからnamed exportでエクスポートしたので、{}をつけて変数Buttonをインポート
+// named exportでエクスポートしたので、{}の中に変数をインポート
 // モジュールバンドラーで拡張子を短縮（/index.jsxを省略）
 
 
 export const App = () => {
   return (
+    
     <div>
       <img src={reactLogo} className={styles['react-logo']} />
       <h1>Hello React!</h1>
 
       {/* 以下に練習問題の回答を記述してください */}
-
+      
       <hr />
 
       <Button />
@@ -37,6 +36,7 @@ export const App = () => {
 
       <Card>
         <Country info={{ imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif', name: 'アメリカ' }} />
+        {/* width/height propsは任意なので、記述なし */}
       </Card>
 
       <hr />
@@ -56,12 +56,12 @@ export const App = () => {
       <AlertButton />
 
       <hr />
-      
+
       <InputField />
 
       <hr />
 
-      <CharacterImage/>
+      <CharacterImage />
 
 
     </div>

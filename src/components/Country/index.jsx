@@ -1,6 +1,9 @@
 import styles from './index.module.css'
+import PropTypes from 'prop-types'
 
-export const Country = ({ info, width, height }) => {
+
+
+export const Country = ({ info, width, height}) => {
   return (
     <div>
       <img src={info.imgUrl}
@@ -16,7 +19,6 @@ export const Country = ({ info, width, height }) => {
 }
 
 
-import PropTypes from 'prop-types'
 
 Country.propTypes = {
   info: PropTypes.exact({
@@ -31,3 +33,4 @@ Country.defaultProps = {
   width: 120,
   height: 80
 }
+

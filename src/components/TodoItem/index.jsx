@@ -4,12 +4,12 @@ import styles from './index.module.css'
 export const TodoItem = ({ name, isToday, isCompleted }) => {
   return (
     <li className={styles.name}>
-      {isCompleted ? (
-        <>
-          {name}✔︎
-        </>
-      ) : isToday ? (
+      {isToday ? (
         name
+      ) : isCompleted ? (
+        <>
+        {name}✔︎
+        </>
       ) : null}
     </li>
   );
@@ -20,3 +20,5 @@ TodoItem.propTypes = {
   isToday: PropTypes.bool.isRequired,
   isCompleted: PropTypes.bool.isRequired,
 }
+
+

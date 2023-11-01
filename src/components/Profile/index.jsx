@@ -10,8 +10,13 @@ export const Profile = () => {
   return (
     <>
     <img src={imgUrl} className={styles.avatar} />
-    <p className={styles.sentence}>I am John</p>
+    <p className={styles.sentence}>I am {name}</p>
     <p className={styles.sentence}>BirthDay:{getBirthDay()} </p>
     </>
   )
 }
+
+
+
+// getBirthDay(): 関数は現在の日付を取得
+// toLocaleDateStringメソッドを使って日付の文字列を返す
