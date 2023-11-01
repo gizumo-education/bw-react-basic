@@ -5,3 +5,9 @@ export default function Button() {
     <button className={styles.button}>Button</button>
   )
 }
+
+export const Buttons = () => {
+  return (
+    <button className={styles.button}>Button</button>
+  )
+}
