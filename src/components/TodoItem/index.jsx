@@ -3,11 +3,13 @@ import styles from './index.module.css'
 
 export const TodoItem = ({ name, isToday, isCompleted }) => {
   return (
-    isToday?(
+    <>
+    {isToday?(
       isCompleted?
-        <li className={styles.name}>{name} ✔︎ </li> :
-        <li className={styles.name}>{name}</li>
-    ):null
+      <li className={styles.name}>{name}✔</li>
+      :<li className={styles.name}>{name}</li>
+    ):null}
+    </>
   )
 }
 
