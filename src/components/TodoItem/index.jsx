@@ -5,9 +5,9 @@ export const TodoItem = ({ name, isToday, isCompleted }) => {
   return (
     <>
     {isToday?(
-      isCompleted?
-      <li className={styles.name}>{name}✔</li>
-      :<li className={styles.name}>{name}</li>
+      <li className={styles.name}>
+        {isCompleted? `${name}✔︎`: name }
+      </li>
     ):null}
     </>
   )
