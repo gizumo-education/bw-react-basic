@@ -7,20 +7,33 @@ export const LanguageList = () => {
     { id: 3, name: 'TypeScript', imgUrl: 'https://img.icons8.com/color/48/typescript.png' },
   ]
 
+  // return (
+  //   <ul className={styles.wrapper}>
+  //     <li className={styles.item}>
+  //       <img src={languages[0].imgUrl} />
+  //       <p>{languages[0].name}</p>
+  //     </li>
+  //     <li className={styles.item}>
+  //       <img src={languages[1].imgUrl} />
+  //       <p>{languages[1].name}</p>
+  //     </li>
+  //     <li className={styles.item}>
+  //       <img src={languages[2].imgUrl} />
+  //       <p>{languages[2].name}</p>
+  //     </li>
+  //   </ul>
+  // )
+
   return (
     <ul className={styles.wrapper}>
-      <li className={styles.item}>
-        <img src={languages[0].imgUrl} />
-        <p>{languages[0].name}</p>
-      </li>
-      <li className={styles.item}>
-        <img src={languages[1].imgUrl} />
-        <p>{languages[1].name}</p>
-      </li>
-      <li className={styles.item}>
-        <img src={languages[2].imgUrl} />
-        <p>{languages[2].name}</p>
-      </li>
+      {
+        languages.map((language) => (
+        <li className={styles.item} key={language.id}>
+          <img src={language.imgUrl} />
+          <p>{language.name}</p>
+        </li>
+      ))
+      }
     </ul>
   )
 }
