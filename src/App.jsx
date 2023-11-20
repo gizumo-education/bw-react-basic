@@ -6,6 +6,7 @@ import { Country } from './components/Country'
 import { Card } from './components/Card'
 import { TodoItem } from './components/TodoItem'
 import { LanguageList } from './components/LanguageList'
+import { AlertButton } from './components/AlertButton'
 
 export const App = () => {
   return (
@@ -31,6 +32,10 @@ export const App = () => {
       </ul>
       <hr />
       <LanguageList />
+      <hr />
+      <AlertButton />
     </div>
   )
 }
+
+
