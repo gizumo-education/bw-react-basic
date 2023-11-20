@@ -1,11 +1,8 @@
 .button {
-  background-color: #3bcef7;
+  background-color: grey;
+  /* ・・・ */
 }
 
-.button:hover {
-  background-color: #61dafb;
-}
-
-.button:focus {
-  outline: none;
+.active {
+  background-color: red;
 }
