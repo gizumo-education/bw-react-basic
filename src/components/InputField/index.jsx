@@ -2,8 +2,6 @@ import styles from './index.module.css'
 import { useState } from 'react'
 
 export const InputField = () => {
-
-  let value = ''
   const [text, setText] = useState('');
   //textがステート 変数　settextがステートを更新する関数
 
