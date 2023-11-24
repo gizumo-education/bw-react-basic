@@ -3,15 +3,15 @@ import { useState } from 'react'
 
 
 export const InputField = () => {
-  const [inValue, setValue] = useState('')
+  const [value, setValue] = useState('')
   const handleInput = (e) => {
     setValue(e.target.value )
   }
 
   return (
     <>
-      <input value={inValue} onChange={handleInput} className={styles.input} placeholder='任意の文字を入力' />
-      <p>入力文字：{inValue}</p>
+      <input value={value} onChange={handleInput} className={styles.input} placeholder='任意の文字を入力' />
+      <p>入力文字：{value}</p>
     </>
   )
 }

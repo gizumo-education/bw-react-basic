@@ -19,14 +19,16 @@ export const App = () => {
       {/* 以下に練習問題の回答を記述してください */}
       <hr />
       {/* <!-- Buttonコンポーネントのタグをここに3つ記述 --> */}
-      <Button /><Button /><Button />
+      <Button />
+      <Button />
+      <Button />
       <hr />
       <Profile />
       <hr />
       <Card>
         <Country info = {{
-  imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
-  name: 'アメリカ'
+          imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+          name: 'アメリカ'
         }}/>
       </Card>
       <hr />
