@@ -18,9 +18,10 @@ return(
     <h1>Hello React!</h1>
 
     {/* 以下に練習問題の回答を記述してください */}
-    {<Button />}
-    {<Button />}
-    {<Button />}
+    <hr />
+    <Button />
+    <Button />
+    <Button />
     <hr />
     {<Profile />}
     {<Country
@@ -50,7 +51,7 @@ return(
       <AlertButton />
     <hr />
       <InputField />
-      <hr />
+    <hr />
       <CharacterImage/>
   </div>
   )
