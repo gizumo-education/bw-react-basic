@@ -9,7 +9,15 @@ export const LanguageList = () => {
 
   return (
     <ul className={styles.wrapper}>
-      <li className={styles.item}>
+      
+      {languages.map((languages) => (
+        <li className={styles.item} key={languages.id}>
+          <img src={languages.imgUrl} />
+          <p>{languages.name}</p>
+        </li>
+      ))}
+
+      {/* <li className={styles.item}>
         <img src={languages[0].imgUrl} />
         <p>{languages[0].name}</p>
       </li>
@@ -20,7 +28,7 @@ export const LanguageList = () => {
       <li className={styles.item}>
         <img src={languages[2].imgUrl} />
         <p>{languages[2].name}</p>
-      </li>
+      </li> */}
     </ul>
   )
 }
