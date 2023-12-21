@@ -6,10 +6,14 @@ export const Profile = () => {
   const getBirthDay = () => {
     return new Date().toLocaleDateString()
   }
-
   return (
-    <img src='imgUrl' className={styles.avatar}>
-    <p className={styles.sentence}>I am John</p>
-    <p className={styles.sentence}>BirthDay: </p>
+    <>
+      <img
+        src={imgUrl}
+        className={styles.avatar}
+      />
+      <p className={styles.sentence}>I am {name}</p>
+      <p className={styles.sentence}>BirthDay:{getBirthDay()} </p>
+    </>
   )
 }
