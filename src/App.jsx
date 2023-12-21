@@ -1,7 +1,10 @@
 import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
-import { Button } from './components/Button'
-import { Profile } from './components/Profile'
+import { Button } from './components/Button' /* section4 */
+import { Profile } from './components/Profile' /* section5 */
+import { Country } from './components/Country' /* section6 */
+import { Card } from './components/Card' /* section6 */
+
 
 export const App = () => {
   return (
@@ -22,7 +25,18 @@ export const App = () => {
       {/* section5 Profileコンポーネントのタグをここに記述 */}
       <Profile />
 
-    </div>
+      <hr />
+      {/* CardコンポーネントとCountryコンポーネントのタグをここに記述 */}
+      <Card>
+        <Country
+          info={{
+            imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+            name: 'アメリカ'
+          }}
+        />
+      </Card>
+
+    </div >
   )
 }
 
