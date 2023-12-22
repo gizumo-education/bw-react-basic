@@ -8,6 +8,7 @@ import { TodoItem } from './components/TodoItem' /* section7 */
 import { LanguageList } from './components/LanguageList' /* section8 */
 import { AlertButton } from './components/AlertButton' /* section9 */
 import { InputField } from './components/InputField' /* section10 */
+import { CharacterImage } from './components/CharacterImage' /* section11 */
 
 
 export const App = () => {
@@ -71,7 +72,11 @@ export const App = () => {
       <hr />
       {/* section10 InputFieldコンポーネントのタグをここに記述 */}
       <InputField />
-      
+
+      <hr />
+      {/* section11 CharacterImageコンポーネントのタグをここに記述  */}
+      <CharacterImage />
+
     </div >
   )
 }
