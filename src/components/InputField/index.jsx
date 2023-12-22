@@ -14,3 +14,5 @@ export const InputField = () => {
     </>
   )
 }
+
+// {(e) => value = e.target.value}
