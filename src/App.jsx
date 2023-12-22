@@ -4,8 +4,8 @@ import { Button } from './components/Button' /* section4 */
 import { Profile } from './components/Profile' /* section5 */
 import { Country } from './components/Country' /* section6 */
 import { Card } from './components/Card' /* section6 */
-import { TodoItem } from './components/TodoItem'
-
+import { TodoItem } from './components/TodoItem' /* section7 */
+import { LanguageList } from './components/LanguageList' /* section8 */
 
 export const App = () => {
   return (
@@ -56,6 +56,10 @@ export const App = () => {
           isCompleted={false}
         />
       </ul>
+
+      <hr />
+      {/* section8 LanguageListコンポーネントのタグをここに記述 */}
+      <LanguageList />
 
     </div >
   )
