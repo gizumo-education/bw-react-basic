@@ -5,6 +5,7 @@ import { Profile } from './components/Profile/index.jsx';
 import { Country } from './components/Country/index.jsx';
 import { Card } from './components/Card/index.jsx';
 import { TodoItem } from './components/TodoItem/index.jsx';
+import { LanguageList } from './components/LanguageList/index.jsx';
 
 export const App = () => {
   return (
@@ -39,6 +40,9 @@ export const App = () => {
         <TodoItem name='HTMLの復習' isToday={true} isCompleted={false} />
         <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
       </ul>
+
+      <hr />
+      <LanguageList />
 
     </div>
   )
