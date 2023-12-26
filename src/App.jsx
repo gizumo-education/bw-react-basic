@@ -43,6 +43,7 @@ export const App = () => {
         <TodoItem name='Reactの学習' isToday={true} isCompleted={true} />
         <TodoItem name='HTMLの復習' isToday={true} isCompleted={false} />
         <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
+        
       </ul>
 
       <hr />
