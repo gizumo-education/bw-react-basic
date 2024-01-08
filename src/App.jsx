@@ -1,7 +1,7 @@
 import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
 
-
+import { Button } from './components/Button/index.jsx'
 export const App = () => {
 return (
   <div>
