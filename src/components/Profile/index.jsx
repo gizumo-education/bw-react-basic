@@ -14,7 +14,7 @@ export const Profile = () => {
         className={styles.avatar}
       />
       <p className={styles.sentence}>I am {name}</p>
-      <p className={styles.sentence}>BirthDay: {getBirthDay}</p>
+      <p className={styles.sentence}>BirthDay: {getBirthDay()}</p>
     </>
   )
 }
