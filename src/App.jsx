@@ -10,31 +10,25 @@ import { LanguageList } from './components/LanguageList/index.jsx'
 import { AlertButton } from './components/AlertButton/index.jsx'
 
 export const App = () => {
-  const handleAlert = () => {
-    alert('アラート')
-  }
-
   return (
     <div>
-    <img src={reactLogo} className={styles['react-logo']} />
-    <h1>Hello React!</h1>
+      <img src={reactLogo} className={styles['react-logo']} />
+      <h1>Hello React!</h1>
 
-    {/* 以下に練習問題の回答を記述してください */}
-    <hr />
+      {/* 以下に練習問題の回答を記述してください */}
+      <hr />
       <Button />
       <Button />
       <Button />
-    <hr />
+      <hr />
       <Profile />
-    <hr />
+      <hr />
       <Card>
       <Country
         info={{
           imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
           name: 'アメリカ'
         }}
-        width={120}
-        height={80}
       />
       </Card>
       <ul>
@@ -42,10 +36,10 @@ export const App = () => {
         <TodoItem name='HTMLの復習' isToday={true} isCompleted={false} />
         <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
       </ul>
-    <hr/>
+      <hr/>
       <LanguageList />
-    <hr/>
-      <AlertButton onAlert={handleAlert}/>
+      <hr/>
+      <AlertButton />
     </div>
   )
 }
