@@ -25,4 +25,6 @@ Country.defaultProps = {
   height: 80
 }
 
-// .isRequired＝必須
+// .isRequired＝必ず渡す必要がある
+// 型定義するためPropTypesを使用
+// コードの意味を理解する

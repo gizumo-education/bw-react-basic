@@ -14,3 +14,6 @@ Card.propTypes = {
 Card.defaultProps = {
   children: null
 }
+
+// 入れ子にしたいコンポーネント表現したいため、childrenを記載する
+// propsを定義している
