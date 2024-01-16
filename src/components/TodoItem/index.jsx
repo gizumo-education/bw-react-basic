@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import styles from './index.module.css'
 
 export const TodoItem = ({ name, isToday, isCompleted }) => {
-  return isToday &&
+  return isToday && //論理積
   <li className={styles.name}>
     {name}
     {isCompleted && '✔︎'}
