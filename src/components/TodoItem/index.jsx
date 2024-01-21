@@ -2,9 +2,11 @@ import PropTypes from 'prop-types'
 import styles from './index.module.css'
 
 export const TodoItem = ({ name, isToday, isCompleted }) => {
-  return <li className={styles.name}>{name}</li>
-}
-
+    if (isToday) {
+      return <li className={styles.name}>{name}{isCompleted && '✔️'}</li>//式とか変数m描きたい
+    }
+  }
+  
 TodoItem.propTypes = {
   name: PropTypes.string.isRequired,
   isToday: PropTypes.bool.isRequired,
