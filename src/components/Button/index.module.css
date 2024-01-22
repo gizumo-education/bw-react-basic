@@ -1,4 +1,4 @@
-.button {
+ .button {
   background-color: #3bcef7;
 }
 
@@ -8,4 +8,19 @@
 
 .button:focus {
   outline: none;
+} 
+
+/* .button {
+  background-color: blue;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+} */
+
+/* .button {
+  background-color: grey;
 }
+
+.active {
+  background-color: red;
+} */
