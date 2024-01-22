@@ -11,7 +11,7 @@ import styles from './index.module.css'
       <ul className={styles.wrapper}>
         {
           languages.map((languages) => (
-            <li key={languages.id} className='{styles.item}'>
+            <li key={languages.id} className={styles.item}>
             <img src={languages.imgUrl} />
             <p>{languages.name}</p>
           </li>
