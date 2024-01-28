@@ -10,11 +10,11 @@ import styles from './index.module.css'
     return (
       <ul className={styles.wrapper}>
         {
-          languages.map((languages) => (
-            <li key={languages.id} className={styles.item}>
-            <img src={languages.imgUrl} />
-            <p>{languages.name}</p>
-          </li>
+          languages.map((language) => (
+            <li key={language.id} className={styles.item}>
+              <img src={language.imgUrl} />
+              <p>{language.name}</p>
+            </li>
       ))
     }
   </ul>

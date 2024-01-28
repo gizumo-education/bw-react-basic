@@ -3,7 +3,7 @@ import styles from './index.module.css'
 
 export const TodoItem = ({ name, isToday, isCompleted }) => {
     if (isToday) {
-      return <li className={styles.name}>{name}{isCompleted && '✔️'}</li>//式とか変数m描きたい
+      return <li className={styles.name}>{name}{isCompleted && '✔️'}</li>
     }
   }
   

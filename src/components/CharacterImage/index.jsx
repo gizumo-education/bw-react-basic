@@ -9,7 +9,7 @@ export const CharacterImage = () => {
       console.log(res.data.sprites.other['official-artwork']['front_default']) // 複数回表示される
       setImgUrl(res.data.sprites.other['official-artwork']['front_default'])
     })
-  },[]  )
+  },[])
   
   return (
     <>
