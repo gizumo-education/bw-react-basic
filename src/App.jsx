@@ -3,6 +3,7 @@ import styles from './App.module.css'
 import  Button  from './components/Button'
 import { Profile } from './components/Profile'
 import { Country } from './components/Country'
+import { Card } from './components/Card'
 
 export const App = () => {
   return (
@@ -20,14 +21,16 @@ export const App = () => {
       <Profile />
       
       <hr />
-      <Country 
-       info={{
-          imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
-          name: 'アメリカ'
-        }}
-        width={120}
-        height={80}
-      />
+      <Card>
+        <Country 
+        info={{
+            imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+            name: 'アメリカ'
+          }}
+          width={120}
+          height={80}
+        />
+      </Card>
     </div>
   )
 }
