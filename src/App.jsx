@@ -27,14 +27,6 @@ export const App = () => {
       {/* Profileコンポーネントのタグをここに記述 */}
       <Profile />
       <hr />
-      {/* Countryコンポーネントのタグをここに記述 */}
-      {/* <Country
-        info={{
-          imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
-          name: 'アメリカ'
-        }}
-      /> */}
-      <hr />
       {/* CardコンポーネントとCountryコンポーネントのタグをここに記述 */}
       <Card>
         <Country
@@ -65,11 +57,6 @@ export const App = () => {
       <hr />
       {/* <!-- CharacterImageコンポーネントのタグをここに記述 --> */}
       <CharacterImage />
-
-
-
-
-
     </div>
   )
 }

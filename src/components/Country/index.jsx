@@ -15,10 +15,9 @@ export const Country = ( { info, size }) => {
   )
 }
 Country.protoTypes = {
-  info: PropTypes.exact({//exactは、オブジェクトの中身を厳密にチェック
-    url: PropTypes.string.isRequired,//isRequiredは、必須
+  info: PropTypes.exact({
+    url: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired
-    //infoが、上記2つのプロパティーを必ず持ってどちらも文字列の値を渡すことを定義
   }).isRequired,
   size: PropTypes.number
 }

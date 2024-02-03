@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import styles from './index.module.css'
 import { Country } from '../Country/index'
 
-export const Card = ({ children }) => { //countryを受け取る？？
+export const Card = ({ children }) => {
 
   return (
     <div className={styles.card}>
