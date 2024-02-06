@@ -7,10 +7,7 @@ export const InputField = () => {
     setInputValue(e.target.value);
   };
 
-  const handleClick = () => {
-    setCount(count + 1)
-  }
-  let value = ''
+
 
   return (
     <>
@@ -20,7 +17,6 @@ export const InputField = () => {
         className={styles.input}
         placeholder='任意の文字を入力' />
       <p>入力文字：{inputValue}</p>
-      <button onClick={handleClick}>Count up</button>
     </>
   )
 }

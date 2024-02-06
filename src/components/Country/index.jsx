@@ -1,29 +1,31 @@
 import PropTypes from 'prop-types';
 import styles from './index.module.css';
 
-export const Country = ({ imgInfo,size }) => {
+export const Country = ({ info, width, height }) => {
   return (
     <div>
       <img
-        src={imgInfo.url}
-        width={size}
-        height={size}
+        src={info.url}
+        width={width}
+        height={height}
         className={styles.country}
-        alt={imgInfo.name}
+        alt={info.name}
       />
-      <p className={styles.name}>{imgInfo.name}</p>
+      <p className={styles.name}>{info.name}</p>
     </div>
   );
 };
 
 Country.propTypes = {
-  imgInfo: PropTypes.exact({
+  info: PropTypes.exact({
     url: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
   }).isRequired,
-  size: PropTypes.number,
+  width: PropTypes.number,
+  height: PropTypes.number,
 };
 
 Country.defaultProps = {
-  size: 80,
+  width: 120,
+  height: 80,
 };

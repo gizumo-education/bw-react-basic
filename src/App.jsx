@@ -1,8 +1,9 @@
 import React from 'react';
-import reactLogo from './assets/react.svg';
-import styles from './App.module.css';
+import reactLogo from './assets/react.svg';  // Reactロゴの画像パス
+import styles from './App.module.css';  // スタイルシートのインポート
 import { Button } from './components/Button/index.jsx';
 import { Profile } from './components/Profile/index.jsx';
+import { Card } from './components/Card/index.jsx';
 import { Country } from './components/Country/index.jsx';
 import { TodoItem } from './components/TodoItem/index.jsx';
 import { LanguageList } from './components/LanguageList/index.jsx';
@@ -31,7 +32,11 @@ export const App = () => {
 
       <hr />
       <Profile />
-      <Country imgInfo={countryInfo} size={80} />
+
+      <hr />
+      <Card>
+        <Country info={countryInfo} width={120} height={80} />
+      </Card>
 
       <hr />
       <ul>
