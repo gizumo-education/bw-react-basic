@@ -2,17 +2,16 @@ import PropTypes from 'prop-types';
 import styles from './index.module.css';
 
 export const Country = ({ imgInfo,size }) => {
-  const { url,name } = imgInfo;
   return (
     <div>
       <img
-        src={url}
+        src={imgInfo.url}
         width={size}
         height={size}
         className={styles.country}
-        alt={name}
+        alt={imgInfo.name}
       />
-      <p className={styles.name}>{name}</p>
+      <p className={styles.name}>{imgInfo.name}</p>
     </div>
   );
 };

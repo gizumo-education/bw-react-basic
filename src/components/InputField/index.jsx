@@ -3,7 +3,6 @@ import { useState } from 'react'
 
 export const InputField = () => {
   const [inputValue,setInputValue] = useState('');
-  const [count,setCount] = useState(0);
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
