@@ -3,7 +3,6 @@ import styles from './index.module.css'
 import { Country } from '../Country/index'
 
 export const Card = ({ children }) => {
-
   return (
     <div className={styles.card}>
       {children}

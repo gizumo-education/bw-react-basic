@@ -1,7 +1,7 @@
 import styles from './index.module.css'
 import PropTypes from 'prop-types'
 
-export const Country = ( { info, size }) => {
+export const Country = ({ info, size }) => {
   return (
     <div>
       <img
@@ -9,11 +9,12 @@ export const Country = ( { info, size }) => {
         width={size.width}
         height={size.height}
         className="Country"
-       />
+      />
       <p className={styles.name}>{info.name}</p>
     </div>
   )
 }
+
 Country.protoTypes = {
   info: PropTypes.exact({
     url: PropTypes.string.isRequired,

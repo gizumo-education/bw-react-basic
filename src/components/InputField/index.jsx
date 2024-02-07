@@ -9,7 +9,9 @@ export const InputField = () => {
       <input
         value={value}
         onChange={(e) => setValue(e.target.value)}
-         className={styles.input} placeholder='任意の文字を入力' />
+        className={styles.input}
+        placeholder='任意の文字を入力'
+      />
       <p>入力文字：{value}</p>
     </>
   )

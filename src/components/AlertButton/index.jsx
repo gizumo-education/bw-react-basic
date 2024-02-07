@@ -1,12 +1,15 @@
 import styles from './index.module.css'
 
 export const AlertButton = () => { 
- 
-    return(
-     <button
-       onClick={() => {
-        alert('わあああああああああああ')
-       }} className={styles.button}>
-        Alert</button> 
+  const handleAlert = () => {
+    alert('わあああああああああああ')
+  }
+  return (
+    <button
+      onClick={handleAlert}
+      className={styles.button}
+    >
+      Alert
+    </button> 
   )
 }
