@@ -19,18 +19,18 @@ export const App = () => {
       {/* 以下に練習問題の回答を記述してください */}
 
       <hr />     
-        <Button /><Button /><Button />
+      <Button /><Button /><Button />
       <hr />
-        <Profile />
+      <Profile />
       <hr />
-        <Card>
-          <Country
-            info={{
-              imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
-              name: 'アメリカ'
-            }}
-          />
-        </Card>
+      <Card>
+        <Country
+          info={{
+            imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+            name: 'アメリカ'
+          }}
+        />
+      </Card>
       <hr />
       <ul>
         <TodoItem name='Reactの学習' isToday={true} isCompleted={true} />
@@ -38,13 +38,13 @@ export const App = () => {
         <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
       </ul>
       <hr />
-        <LanguageList />
+      <LanguageList />
       <hr />
-        <AlertButton />
+      <AlertButton />
       <hr />
-        <InputField />
+      <InputField />
       <hr />
-        <CharacterImage />
+      <CharacterImage />
     </div>
   )
 }
