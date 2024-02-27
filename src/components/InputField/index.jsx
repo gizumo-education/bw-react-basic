@@ -1,4 +1,5 @@
 import styles from './index.module.css'
+import { useState } from 'react'
 
 export const InputField = () => {
   let value = ''

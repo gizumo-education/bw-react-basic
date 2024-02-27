@@ -1,4 +1,5 @@
 import styles from './index.module.css'
+import React from 'react';
 
 export const Profile = () => {
   const imgUrl = 'https://i.imgur.com/7vQD0fPs.jpg';
@@ -8,8 +9,10 @@ export const Profile = () => {
   }
 
   return (
-    <img src='imgUrl' className={styles.avatar}>
-    <p className={styles.sentence}>I am John</p>
-    <p className={styles.sentence}>BirthDay: </p>
+    <div>
+      <img src={imgUrl} className={styles.avatar}></img>
+      <p className={styles.sentence}>I am {name}</p>
+      <p className={styles.sentence}>BirthDay:{getBirthDay()} </p>
+    </div>
   )
 }

@@ -1,6 +1,14 @@
 import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
+import PropTypes from 'prop-types'
 import { Button } from './components/Button/index.jsx'
+import { Profile } from './components/Profile/index.jsx'
+import { Country } from './components/Country/index.jsx'
+import { Card } from './components/Card/index.jsx'
+import { TodoItem } from './components/TodoItem/index.jsx'
+import { LanguageList } from './components/LanguageList/index.jsx'
+import { AlertButton } from './components/AlertButton/index.jsx'
+import { InputField } from './components/InputField/index.jsx'
 
 /* 以下に練習問題の回答を記述してください */
 export const App = () => {
@@ -15,7 +23,37 @@ export const App = () => {
       <Button></Button>
       <Button></Button>
       <Button></Button>
-    </div>
+      <hr />
+      <Profile></Profile>
+      <hr />
+      <Card>
+        <Country
+          info={{
+            imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+            name: 'アメリカ'
+          }}
+          width={120} 
+          height={80}
+        />
+      </Card>
+      <hr />
+      <div>
+        <ul>
+          <TodoItem name='Reactの学習' isToday={true} isCompleted={true} />
+          <TodoItem name='HTMLの復習' isToday={true} isCompleted={false} />
+          <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
+        </ul>
+        <hr />
+      </div>
+      <hr />
+      <hr />
+      <LanguageList></LanguageList>
+      <hr />
+      <AlertButton></AlertButton>
+      <hr />
+      <InputField></InputField>
+      </div>
+
   )
 }
 
