@@ -1,10 +1,23 @@
-import styles from './index.module.css'
+import React from 'react';
+import styles from './index.module.css';
+import PropTypes from 'prop-types';
 
-export const Country = () => {
+
+export const Country = ({ info, width = 120, height = 80 }) => {
+  const { imgUrl, name } = info;
+
   return (
-    <div>
-      <img src={info.imgUrl} width={width} height={height} />
-      <p className={styles.name}>{info.name}</p>
-    </div>
-  )
-}
+    <>
+      <img
+        src={imgUrl}
+        width={width}
+        height={height}
+        alt={name}
+      />
+
+      <p className={styles.name}>{name}</p>
+    </>
+  );
+};
+
+export default Country;

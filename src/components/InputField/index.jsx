@@ -1,12 +1,21 @@
 import styles from './index.module.css'
+import React, {useState} from 'react';
 
 export const InputField = () => {
-  let value = ''
+  const [inputValue,setInputValue]=useState('')
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  }
+
 
   return (
     <>
-      <input onChange={(e) => value = e.target.value} className={styles.input} placeholder='任意の文字を入力' />
-      <p>入力文字：{value}</p>
+      <input type ="text"
+      onChange={handleInputChange}
+      Value={inputValue}
+      className={styles.input}
+      placeholder='任意の文字を入力' />
+      <p>入力文字：{inputValue}</p>
     </>
   )
 }

@@ -8,8 +8,14 @@ export const Profile = () => {
   }
 
   return (
-    <img src='imgUrl' className={styles.avatar}>
+  <>
+    <img
+      src={imgUrl}
+      alt="プロフィール画像"
+      className="styles.avatar"
+      />
     <p className={styles.sentence}>I am John</p>
     <p className={styles.sentence}>BirthDay: </p>
+  </>
   )
 }
