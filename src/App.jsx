@@ -9,6 +9,7 @@ import { TodoItem } from './components/TodoItem/index.jsx'
 import { LanguageList } from './components/LanguageList/index.jsx'
 import { AlertButton } from './components/AlertButton/index.jsx'
 import { InputField } from './components/InputField/index.jsx'
+import { CharacterImage } from './components/CharacterImage/index.jsx'
 
 /* 以下に練習問題の回答を記述してください */
 export const App = () => {
@@ -45,15 +46,14 @@ export const App = () => {
         </ul>
         <hr />
       </div>
-      <hr />
-      <hr />
       <LanguageList></LanguageList>
       <hr />
       <AlertButton></AlertButton>
       <hr />
       <InputField></InputField>
+      <hr />
+      <CharacterImage></CharacterImage>
       </div>
-
   )
 }
 
