@@ -1,5 +1,12 @@
-import styles from './index.module.css'
+import styles from "./index.module.css";
 
 export const AlertButton = () => {
-  return <button className={styles.button}>Alert</button>
-}
+  const Alert = () => {
+    alert("hoge");
+  };
+  return (
+    <button onClick={Alert} className={styles.button}>
+      Alert
+    </button>
+  );
+};

@@ -5,6 +5,7 @@ import { Profile } from "./components/Profile/index/";
 import { Card } from "./components/Card/index/";
 import { TodoItem } from "./components/TodoItem/index/";
 import { LanguageList } from "./components/LanguageList/index/";
+import { AlertButton } from "./components/AlertButton/index/";
 
 export const App = () => {
   return (
@@ -37,6 +38,9 @@ export const App = () => {
 
       <hr />
       <LanguageList />
+
+      <hr />
+      <AlertButton />
     </div>
   );
 };
