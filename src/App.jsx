@@ -4,6 +4,7 @@ import Moge from "./components/button/index/";
 import { Profile } from "./components/Profile/index/";
 import { Card } from "./components/Card/index/";
 import { TodoItem } from "./components/TodoItem/index/";
+import { LanguageList } from "./components/LanguageList/index/";
 
 export const App = () => {
   return (
@@ -33,6 +34,9 @@ export const App = () => {
           isCompleted={false}
         />
       </ul>
+
+      <hr />
+      <LanguageList />
     </div>
   );
 };
