@@ -2,13 +2,13 @@ import styles from "./index.module.css";
 import { useState } from "react";
 
 export const InputField = () => {
-  const [hoge, setHuga] = useState("");
+  const [hoge, setHoge] = useState("");
 
   return (
     <>
       <input
         onChange={(e) => {
-          setHuga(e.target.value);
+          setHoge(e.target.value);
           console.log(e.target.value);
         }}
         className={styles.input}

@@ -8,6 +8,7 @@ import { LanguageList } from "./components/LanguageList/index/";
 import { AlertButton } from "./components/AlertButton/index/";
 import { InputField } from "./components/InputField/index/";
 import { CharacterImage } from "./components/CharacterImage/index/";
+import { Country } from "./components/Country/index/";
 
 export const App = () => {
   return (
@@ -25,7 +26,14 @@ export const App = () => {
       <Profile />
 
       <hr />
-      <Card />
+      <Card>
+        <Country
+          info={{
+            imgUrl: "https://www.civillink.net/sozai/kokki100/pics2654.gif",
+            name: "アメリカ",
+          }}
+        />
+      </Card>
 
       <hr />
       <ul>
