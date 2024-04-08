@@ -2,6 +2,7 @@ import reactLogo from "./assets/react.svg";
 import styles from "./App.module.css";
 import Moge from "./components/button/index/";
 import { Profile } from "./components/Profile/index/";
+import { Card } from "./components/Card/index/";
 
 export const App = () => {
   return (
@@ -17,6 +18,9 @@ export const App = () => {
 
       <hr />
       <Profile />
+
+      <hr />
+      <Card />
     </div>
   );
 };
