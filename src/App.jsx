@@ -8,6 +8,8 @@ export const App = () => {
       <img src={reactLogo} className={styles["react-logo"]} />
       <h1>Hello React!</h1>
 
+      <hr />
+
       {/* 以下に練習問題の回答を記述してください */}
       <Button />
       <Button />
@@ -15,5 +17,3 @@ export const App = () => {
     </div>
   );
 };
-
-<hr />;
