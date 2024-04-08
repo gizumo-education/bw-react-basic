@@ -1,6 +1,6 @@
 import styles from './index.module.css'
 
-export const Country = () => {
+export const Country = ({ info, width, height }) => {
   return (
     <div>
       <img src={info.imgUrl} width={width} height={height} />
