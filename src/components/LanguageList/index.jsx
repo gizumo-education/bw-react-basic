@@ -22,7 +22,7 @@ export const LanguageList = () => {
   return (
     <ul className={styles.wrapper}>
       {languages.map((language) => (
-        <li className={styles.item}>
+        <li className={styles.item} key={language.name}>
           <img src={language.imgUrl} />
           <p>{language.name}</p>
         </li>
