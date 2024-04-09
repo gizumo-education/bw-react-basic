@@ -8,6 +8,7 @@ import { TodoItem } from "./components/TodoItem";
 import { LanguageList } from "./components/LanguageList";
 import { AlertButton } from "./components/AlertButton";
 import { InputField } from "./components/InputField";
+import { CharacterImage } from "./components/CharacterImage";
 
 export const App = () => {
   return (
@@ -38,7 +39,6 @@ export const App = () => {
       </Card>
 
       <hr />
-
       <TodoItem name="Reactの学習" isToday={true} isCompleted={true} />
       <TodoItem name="HTMLの復習" isToday={true} isCompleted={false} />
       <TodoItem name="React Hooksの予習" isToday={false} isCompleted={false} />
@@ -50,8 +50,11 @@ export const App = () => {
       <AlertButton />
 
       <hr />
-
       <InputField />
+
+      <hr />
+      <CharacterImage />
+
     </div>
   );
 };
