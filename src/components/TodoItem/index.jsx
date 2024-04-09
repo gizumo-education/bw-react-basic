@@ -4,11 +4,7 @@ import styles from './index.module.css'
 export const TodoItem = ({ name, isToday, isCompleted }) => {
   const completedMark = isCompleted ? "✔︎" : "";
 
-  if (isToday) {
-    return <li className={styles.name}>{name}{completedMark}</li>;
-  } else {
-    return null;
-  }
+  return isToday && <li className={styles.name}>{name}{completedMark}</li>;
 }
 
 TodoItem.propTypes = {
