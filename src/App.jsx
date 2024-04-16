@@ -7,6 +7,7 @@ import { Profile } from './components/Profile';
 import { Country } from './components/Country';
 import { Card } from './components/Card';
 import { TodoItem } from './components/TodoItem';
+import { LanguageList } from './components/LanguageList';
 
 export const App = () => {
   return (
@@ -15,17 +16,14 @@ export const App = () => {
       <h1>Hello React!</h1>
 
       <hr />
-      {/* <!-- Buttonコンポーネントのタグをここに3つ記述 --> */}
       <Button />
       <Button />
       <Button />
 
       <hr />
-      {/* <!-- Profileコンポーネントのタグをここに記述 --> */}
       <Profile />
 
       <hr />
-      {/* <!-- CardコンポーネントとCountryコンポーネントのタグをここに記述 --> */}
       <Card>
       <Country
       info={{
@@ -36,12 +34,14 @@ export const App = () => {
       </Card>
 
       <hr />
-      {/* <!-- ulタグとTodoItemコンポーネントのタグをここに記述 --> */}
       <ul>
         <TodoItem name='Reactの学習' isToday={true} isCompleted={true} />
         <TodoItem name='HTMLの復習' isToday={true} isCompleted={false} />
         <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
       </ul>
+
+      <hr />
+      <LanguageList />
     </div>
   )
 };
