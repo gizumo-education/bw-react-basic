@@ -3,6 +3,7 @@ import styles from './App.module.css'
 
 {/* 以下に練習問題の回答を記述してください */}
 import { Button } from './components/Button';
+import { Profile } from './components/Profile';
 
 export const App = () => {
   return (
@@ -14,6 +15,9 @@ export const App = () => {
       <Button />
       <Button />
       <Button />
+      <hr />
+      {/* <!-- Profileコンポーネントのタグをここに記述 --> */}
+      <Profile />
     </div>
   )
 };
