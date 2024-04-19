@@ -15,7 +15,7 @@ import { CharacterImage } from './components/CharacterImage';
 export const App = () => {
   return (
     <div>
-      <img src={reactLogo} className={styles['react-logo']} />
+      <img src = {reactLogo} className={styles['react-logo']} />
       <h1>Hello React!</h1>
 
       <hr />
@@ -29,10 +29,11 @@ export const App = () => {
       <hr />
       <Card>
         <Country
-        info={{
-          imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
-          name: 'アメリカ'
-        }}/>
+          info={{
+            imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+            name: 'アメリカ'
+          }}
+        />
       </Card>
 
       <hr />
