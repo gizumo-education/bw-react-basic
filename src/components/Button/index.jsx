@@ -1,6 +1,7 @@
 import styles from './index.module.css'
 
-export default function Button() {
+//default exportからNamed exportに変えたよ
+export const Button = () => {
   return (
     <button className={styles.button}>Button</button>
   )
