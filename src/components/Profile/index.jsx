@@ -11,7 +11,7 @@ export const Profile = () => {
   <>
     <img src={imgUrl} className={styles.avatar}/>
     <p src={name} className={styles.sentence}>I am John</p>
-    <p src={getBirthDay} className={styles.sentence}>BirthDay: </p>
+    <p src={getBirthDay} className={styles.sentence}>BirthDay:2023/7/7 </p>
   </>
   )
 }
