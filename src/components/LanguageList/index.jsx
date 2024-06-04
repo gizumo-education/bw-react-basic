@@ -8,17 +8,17 @@ export const LanguageList = () => {
   ]
 
   return (
-    <>
+    <ul  className={styles.wrapper}>
       {
         languages.map((languages) => ( 
-        <ul key ={languages.id} className={styles.wrapper}>
-      <li className={styles.item}>
+       
+      <li key ={languages.id} className={styles.item}>
       <img src={languages.imgUrl} />
       <p>{languages.name}</p>
       </li>
-    </ul>
+    
         ))
       }
-    </>
+    </ul>
   )
 }
