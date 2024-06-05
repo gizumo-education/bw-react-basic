@@ -4,6 +4,7 @@ import { Button } from "./components/Button";
 import { Profile } from "./components/Profile";
 import { Country } from "./components/Country";
 import { TodoItem } from "./components/TodoItem";
+import { LanguageList } from "./components/LanguageList";
 
 export const App = () => {
   return (
@@ -32,6 +33,9 @@ export const App = () => {
         <TodoItem name="HTMLの復習" isToday={true} isCompleted={false} />
         <TodoItem name="React Hooksの予習" isToday={false} isCompleted={false} />
       </ul>
+      <hr />
+      <LanguageList />
+
     </div>
   );
 };
