@@ -5,8 +5,14 @@ import { Profile } from "./components/Profile";
 import { Country } from "./components/Country";
 import { TodoItem } from "./components/TodoItem";
 import { LanguageList } from "./components/LanguageList";
+import { AlertButton } from "./components/AlertButton";
 
 export const App = () => {
+
+  const handleAlert = () => {
+    alert('hoge');
+  }
+
   return (
     <div>
       <img src={reactLogo} className={styles["react-logo"]} />
@@ -35,7 +41,9 @@ export const App = () => {
       </ul>
       <hr />
       <LanguageList />
+      <hr />
 
+      <AlertButton  onAlert={handleAlert}/>
     </div>
   );
 };
