@@ -6,6 +6,7 @@ import { Country } from "./components/Country";
 import { TodoItem } from "./components/TodoItem";
 import { LanguageList } from "./components/LanguageList";
 import { AlertButton } from "./components/AlertButton";
+import { InputField } from "./components/InputField";
 
 export const App = () => {
 
@@ -42,8 +43,9 @@ export const App = () => {
       <hr />
       <LanguageList />
       <hr />
-
       <AlertButton  onAlert={handleAlert}/>
+      <hr />
+      <InputField />
     </div>
   );
 };
