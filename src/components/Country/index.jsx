@@ -1,7 +1,7 @@
 import styles from './index.module.css'
 import PropTypes from 'prop-types'
 
-export const Country = ({info, height, width, children}) => {
+export const Country = ({info, height, width}) => {
   return (
     <div>
       <img src={info.imgUrl} width={width} height={height} />

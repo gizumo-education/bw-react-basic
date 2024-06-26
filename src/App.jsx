@@ -21,10 +21,11 @@ export const App = () => {
       <Profile />
       <hr />
       <Card>
-        <Country info={{
-          imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
-          name: 'アメリカ'
-        }}
+        <Country
+          info={{
+            imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+            name: 'アメリカ'
+          }}
         />
       </Card>
       <hr />
