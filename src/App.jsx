@@ -61,6 +61,9 @@ export const App = () => {
       <hr />
         <InputField />
 
+      <hr />
+        <CharacterImage/>
+
     </div>
   )
 }
