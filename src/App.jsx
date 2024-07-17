@@ -3,6 +3,7 @@ import styles from './App.module.css'
 import { Button1 } from './components/Button'
 import { Button2 } from './components/Button'
 import { Button3 } from './components/Button'
+import {Profile} from './components/Profile/index'
 
 export const App = () => {
   return (
@@ -15,6 +16,12 @@ export const App = () => {
       <Button1 />
       <Button2 />
       <Button3 />
+
+      <hr />
+      <Profile />
+
+
     </div>
   )
 }
+
