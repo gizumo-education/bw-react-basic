@@ -2,7 +2,7 @@ import { useState } from 'react'
 import styles from './index.module.css'
 
 export const InputField = () => {
-  let [value,setValue] = useState('')
+  const [value,setValue] = useState('')
   const changeValue = (e) => {setValue(e.target.value);}
 
   return (
