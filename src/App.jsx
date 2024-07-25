@@ -6,6 +6,7 @@ import { Country } from './components/Country'
 import { Card } from './components/Card'
 import { TodoItem } from './components/TodoItem'
 import { LanguageList } from './components/LanguageList'
+import { AlertButton } from './components/AlertButton'
 
 export const App = () => {
   return (
@@ -45,14 +46,10 @@ export const App = () => {
 
 <hr />
 <LanguageList />
+
+<hr />
+<AlertButton/>
     </div>
 
   )
 }
-
-// src/components/LanguageList/index.jsx のLanguageListコンポーネントに記述すること
-// LanguageListコンポーネントでは現在、languages変数の配列から要素番号を直接指定してそれぞれ表示させています。これをmap()を使用してリストレンダリングさせるように修正してください
-// なお、<li>に指定されているclassName属性や<img>、<p>の構成は変えないこと
-// src/App.jsx にLanguageListコンポーネントをインポートして、JSX内に追記し、画面に表示できるようにすること
-// 前回までの練習問題で記述した内容は削除せずに追記すること
-// 以下のように<hr />の記述を追加して区切り線をつけ、見やすい形にしてください
