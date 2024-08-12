@@ -5,6 +5,7 @@ import { Profile } from './components/Profile'
 import { Country } from './components/Country'
 import { Card } from './components/Card'
 import { TodoItem } from './components/TodoItem'
+import { LanguageList } from './components/LanguageList'
 
 export const App = () => {
   return (
@@ -58,6 +59,9 @@ export const App = () => {
         isToday={false}
         isCompleted={false}
       ></TodoItem>
+
+      <hr />
+      <LanguageList></LanguageList>
     </div>
   )
 }
