@@ -21,3 +21,9 @@ export const LanguageList = () => {
   )
 }
 
+
+// 1.LanguageListコンポーネントを定義する。
+// 2.コンポーネント内で配列Languagesを定義する。それぞれid,name,imgurlプロパティを持つ。
+// 3.returnでul要素を返す。CSSで実装したwrapperクラスが適用される。
+// 4.mapメソッドで反復処理してそれぞれリストアイテムとして表示する。各言語にli要素を作り、keyはlanguage.idとする。classNameをstyles.itemとして、cssで実装したitemクラスが適用される。
+// srcにはlanguage.imgurlを代入して画像を表示する。pにはlanguage.nameを代入し、名前を表示する。
