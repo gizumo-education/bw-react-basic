@@ -1,3 +1,4 @@
+import { Profile } from './components/Profile/index.jsx'
 import { Button } from './components/Button/index.jsx'
 import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
@@ -15,6 +16,11 @@ export const App = () => {
           <Button />
           <Button />
           <Button />
+        </div>
+
+      <hr />
+        <div>
+          <Profile />
         </div>
     </div>
   )

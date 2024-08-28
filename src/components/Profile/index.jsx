@@ -4,12 +4,14 @@ export const Profile = () => {
   const imgUrl = 'https://i.imgur.com/7vQD0fPs.jpg';
   const name = 'John'
   const getBirthDay = () => {
-    return new Date().toLocaleDateString()
+    return new Date().toLocaleDateString()//日付を呼び出せる
   }
 
   return (
-    <img src='imgUrl' className={styles.avatar}>
-    <p className={styles.sentence}>I am John</p>
-    <p className={styles.sentence}>BirthDay: </p>
+    <div>
+    <img src= {imgUrl} className={styles.avatar}/>
+    <p className={styles.sentence}>{"I am " + name}</p>
+    <p className={styles.sentence}>BirthDay: {getBirthDay()}</p>
+    </div>
   )
 }
