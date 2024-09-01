@@ -1,3 +1,5 @@
+import { Card } from './components/Card/index.jsx'
+import { Country } from './components/Country/index.jsx'
 import { Profile } from './components/Profile/index.jsx'
 import { Button } from './components/Button/index.jsx'
 import reactLogo from './assets/react.svg'
@@ -22,6 +24,16 @@ export const App = () => {
         <div>
           <Profile />
         </div>
+
+      <hr />
+        <div>
+          <Country />
+        </div>
+
+        <Card>
+          <Country/>
+        </Card>
+
     </div>
   )
 }
