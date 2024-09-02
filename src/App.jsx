@@ -2,7 +2,7 @@ import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
 import { Button } from './components/Button'
 import { Profile } from './components/Profile'
-import { CountryImg } from './components/Country'
+import { Country } from './components/Country'
 import { Card } from './components/Card'
 import { TodoItem } from './components/TodoItem'
 import { LanguageList } from './components/LanguageList'
@@ -27,7 +27,12 @@ export const App = () => {
 
       <hr />
       <Card>
-        <CountryImg />
+        <Country
+          info={{
+            imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+            name: 'アメリカ'
+          }}
+        />
       </Card>
 
       <hr />
