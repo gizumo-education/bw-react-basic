@@ -1,17 +1,6 @@
 import styles from './index.module.css'
 import PropTypes from 'prop-types'
 
-//export const CountryImg = () => {
-  //return (
-    //<Country
-      //info={{
-        //imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
-        //name: 'アメリカ'
-      //}}
-    ///>
-  //)
-//}
-
 export const Country = ({info, width, height}) => {
   return (
     <div>
