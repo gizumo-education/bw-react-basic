@@ -1,3 +1,4 @@
+import { LanguageList } from './components/LanguageList/index.jsx'
 import { TodoItem } from './components/TodoItem/index.jsx'
 import { Card } from './components/Card/index.jsx'
 import { Country } from './components/Country/index.jsx'
@@ -42,6 +43,10 @@ export const App = () => {
           <TodoItem name='React Hooksの予習' isToday={false} isCompleted={false} />
         </ul>
 
+      <hr />
+        <div>
+          <LanguageList/>
+        </div>
     </div>
   )
 }
