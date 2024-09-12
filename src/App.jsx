@@ -1,3 +1,4 @@
+import { AlertButton } from './components/AlertButton/index.jsx'
 import { LanguageList } from './components/LanguageList/index.jsx'
 import { TodoItem } from './components/TodoItem/index.jsx'
 import { Card } from './components/Card/index.jsx'
@@ -47,6 +48,12 @@ export const App = () => {
         <div>
           <LanguageList/>
         </div>
+
+      <hr />
+        <div>
+          <AlertButton/>
+        </div>
+
     </div>
   )
 }
