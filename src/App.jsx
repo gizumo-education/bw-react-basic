@@ -1,3 +1,4 @@
+import { InputField } from './components/InputField/index.jsx'
 import { AlertButton } from './components/AlertButton/index.jsx'
 import { LanguageList } from './components/LanguageList/index.jsx'
 import { TodoItem } from './components/TodoItem/index.jsx'
@@ -54,6 +55,10 @@ export const App = () => {
           <AlertButton/>
         </div>
 
+      <hr />
+        <div>
+          <InputField />
+        </div>
     </div>
   )
 }
