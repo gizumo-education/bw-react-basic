@@ -5,7 +5,6 @@ export const InputField = () => {
   const [value, setValue] = useState("")
   const handleChange =(e) => {
     setValue(e.target.value)
-    //setValueの引数として更新したいもの（今回でいうと文字）を記述する
   }
 
   return (
