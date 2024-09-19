@@ -6,6 +6,7 @@ import { Country } from './components/Country';
 import { Card } from './components/Card';
 import { TodoItem } from './components/TodoItem';
 import { LanguageList } from './components/LanguageList';
+import { InputField } from './components/InputField'
 
 export const App = () => {
     return (
@@ -33,6 +34,8 @@ export const App = () => {
             </ul>
             <hr />
             <LanguageList />
+            <hr />
+            <InputField />
         </div>
     );
 }
