@@ -8,6 +8,7 @@ import {Card} from './components/Card/index.jsx'
 import {TodoItem} from './components/TodoItem/index.jsx'
 import {LanguageList} from './components/LanguageList/index.jsx'
 import {AlertButton} from './components/AlertButton/index.jsx'
+import {InputField} from './components/InputField/index.jsx'
 
 export const App = () => {
   return (
@@ -47,6 +48,9 @@ export const App = () => {
       <hr />
       {/* AlertButtonコンポーネントのタグをここに記述 */}
       <AlertButton />
+      <hr />
+      {/* InputFieldコンポーネントのタグをここに記述 */}
+      <InputField />
 
     </div>
   )
