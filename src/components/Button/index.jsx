@@ -1,7 +1,8 @@
-import styles from './index.module.css'
+import styles from './index.module.css';
+import clsx from 'clsx';
 
-export default function Button() {
+export default function Button({ className, isActive }) {
   return (
-    <button className={styles.button}>Button</button>
+    <button className={clsx(className, styles.button, { [styles.active]: isActive })}>Button</button>
   )
 }
