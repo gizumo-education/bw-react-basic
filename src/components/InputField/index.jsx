@@ -7,7 +7,7 @@ export const InputField = () => {
 
   return (
     <>
-      <input onChange={(e) => value = setValue(e.target.value)} className={styles.input} placeholder='任意の文字を入力' />
+      <input value = {value} onChange={(e) => setValue(e.target.value)} className={styles.input} placeholder='任意の文字を入力' />
       <p>入力文字：{value}</p>
     </>
   )

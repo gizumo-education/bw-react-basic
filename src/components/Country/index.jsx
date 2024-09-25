@@ -10,6 +10,15 @@ export const Country = ({info, width, height}) => {
   )
 }
 
+Country.PropTypes = {
+  info:PropTypes.exact({
+    imgUrl:PropTypes.string.isRequired,
+    name:PropTypes.string.isRequired
+  }),
+  width:PropTypes.number,
+  height:PropTypes.number
+}
+
 Country.defaultProps = {
     width: 120,
     height: 80
