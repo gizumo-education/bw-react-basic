@@ -59,3 +59,8 @@ export const App = () => {
     </div>
   )
 }
+
+info.PropTypes = {
+  imgUrl:PropTypes.string.isRequired,
+  name:PropTypes.string.isRequired
+}
