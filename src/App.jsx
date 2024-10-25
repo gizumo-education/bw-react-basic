@@ -2,6 +2,9 @@ import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
 import { Button } from './components/Button'
 import { Profile } from './components/Profile'
+import { Country } from './components/Country'
+import { Card } from './components/Card'
+
 
 export const App = () => {
   return (
@@ -25,10 +28,17 @@ export const App = () => {
     
     <hr />
 
-
+    {/* Section6 */}
+    <Card>{/* 問2 */}
+      <Country /> {/* 問1 */}
+    </Card>
     
 
-    
+    <hr />
+ 
+
+
+     
 
 
 
