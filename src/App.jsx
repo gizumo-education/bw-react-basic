@@ -34,7 +34,11 @@ export const App = () => {
 
     {/* Section6 */}
     <Card>{/* 問2 */}
-      <Country /> {/* 問1 */}
+      <Country
+        info = {{
+          imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+          name: 'アメリカ'
+      }}/>{/* 問1 */}
     </Card>
     
     <hr />
