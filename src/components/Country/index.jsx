@@ -4,11 +4,11 @@ import PropTypes from 'prop-types'
 export const Country = ({info, width, height}) => {
   return (
     <div>
-      <img 
-      src={info.imgUrl} 
-      alt={info.name}
-      width={width} 
-      height={height} 
+      <img
+        src={info.imgUrl}
+        alt={info.name}
+        width={width}
+        height={height}
       />
       <p className={styles.name}>{info.name}</p>
     </div>
