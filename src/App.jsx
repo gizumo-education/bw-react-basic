@@ -8,7 +8,7 @@ import { TodoItem } from './components/TodoItem'
 import { LanguageList } from './components/LanguageList'
 import { AlertButton } from './components/AlertButton'
 import { InputField } from './components/InputField'
-
+import { CharacterImage } from './components/CharacterImage'
 
 export const App = () => {
   return (
@@ -55,6 +55,10 @@ export const App = () => {
     <hr />
     {/* Section10 */}
     <InputField />
+    
+    <hr />
+    {/* Section11 */}
+    <CharacterImage />
     
     <hr />
 
