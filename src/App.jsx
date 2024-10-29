@@ -10,7 +10,13 @@ import {AlertButton} from './components/AlertButton'
 import {InputField} from './components/InputField'
 import {CharacterImage} from './components/CharacterImage'
 
+// appコンポーネント
 export const App = () => {
+
+  const handAlert = () => {
+    alert('huga')
+  }
+
   return (
     <div>
       <img src={reactLogo} className={styles['react-logo']} />
@@ -27,7 +33,8 @@ export const App = () => {
       <hr />
 
       <Card>
-      <Country 
+      <Country
+        // Countryコンポーネントからinfopropsを呼ぶ
         info={{
           imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
           name: 'アメリカ'
@@ -45,7 +52,8 @@ export const App = () => {
       <LanguageList/>
 
       <hr />
-      <AlertButton/>
+
+      <AlertButton hander={handAlert} />
 
       <hr />
       <InputField />

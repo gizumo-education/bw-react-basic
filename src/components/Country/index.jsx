@@ -1,6 +1,8 @@
 import styles from './index.module.css'
 import PropTypes from 'prop-types'
 
+// Countryコンポーネント(子)
+// 分割代入でpropsを呼び出せるようにする
 export const Country = ({info, width, height}) => {
   return (
     <div>
@@ -16,10 +18,13 @@ export const Country = ({info, width, height}) => {
 }
 
 Country.prototype = {
-  info: PropTypes.object,
-  width:PropTypes.number,
-  height:PropTypes.number
-}
+  info:PropTypes.exact({
+    imgUrl:PropTypes.string.isRequired,
+    name:PropTypes.string.isRequired,
+  }).isRequired,
+  width:PropTypes.number.isRequired,
+  height:PropTypes.number.isRequired,
+  }
 
 Country.defaultProps = {
   width: 120,
