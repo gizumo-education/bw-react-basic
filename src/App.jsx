@@ -11,6 +11,11 @@ import { InputField } from './components/InputField'
 import { CharacterImage } from './components/CharacterImage'
 
 export const App = () => {
+
+   const handleAlert = () => {
+    alert('ああああああああ') // alert() - アラートを出してくれるJavaScriptの組み込み関数
+  }
+
   return (
     <div>
     <img src={reactLogo} className={styles['react-logo']} />
@@ -54,7 +59,7 @@ export const App = () => {
     
     <hr />
     {/* Section9 */}
-    <AlertButton />
+    <AlertButton  Alert = {handleAlert} />
     
     <hr />
     {/* Section10 */}
@@ -64,17 +69,6 @@ export const App = () => {
     {/* Section11 */}
     <CharacterImage />
     
-    <hr />
-
-
-
-
-
-    
-
-
-
-
   </div>
   )
 }

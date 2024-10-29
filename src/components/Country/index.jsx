@@ -15,6 +15,7 @@
 import styles from './index.module.css'
 import PropTypes from 'prop-types'
 
+// propsを受け取るには、コンポーネントの関数の引数で分割代入するようにして受け取る
 export const Country = ({ info, width, height }) => {
   return (
       <div>
@@ -29,7 +30,10 @@ export const Country = ({ info, width, height }) => {
 }
 
 Country.propTypes = {
-  info: PropTypes.object,
+  info: PropTypes.exact({
+    imgUrl: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired
+  }).isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
 }

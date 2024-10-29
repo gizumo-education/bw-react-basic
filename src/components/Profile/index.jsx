@@ -24,6 +24,11 @@ export const Profile = () => {
   const name = 'John'
   const getBirthDay = () => new Date().toLocaleDateString()
 
+
+  // new Date() - Dateオブジェクトは現在の日付と時刻
+  // .toLocaleDateString() - メソッド Dateオブジェクトのインスタンスに呼び出され、日付をローカライズされた形式で文字列として返します
+
+
   return (
     <>
       <img

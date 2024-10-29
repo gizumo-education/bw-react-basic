@@ -13,11 +13,13 @@
 
 
 
-import { useState } from 'react'
+import { useState } from 'react' // useStateをreactライブラリからインポートが必要。
 import styles from './index.module.css'
 
 export const InputField = () => {
+  // console.log('再レンダリング')
   const [value, setValue] = useState('')
+  // イベントハンドラ
   const handleInput = (e) => {
     setValue(e.target.value)
   }
@@ -31,6 +33,11 @@ export const InputField = () => {
 }
 
 
+// <input> - ユーザーからの入力を受け取るためのHTML要素
+// onChange属性 - 入力フィールドの値が変更されたときに呼び出されるイベントハンドラを指定します
+// placeholder属性 - 入力フィールドが空のときに表示されるヒントテキスト
+
+// value={value}の説明
 // const [text, setText] = useState("");
 // <input value={text} />
 // <p>{text}</p>
