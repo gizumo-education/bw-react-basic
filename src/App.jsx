@@ -11,6 +11,11 @@ import { InputField } from './components/InputField'
 import { CharacterImage } from './components/CharacterImage'
 
 export const App = () => {
+
+  const handleAlert = () => {
+    alert('Alertボタンがクリックされました！')
+  }
+
   return (
     <div>
       <img src={reactLogo} className={styles['react-logo']} />
@@ -39,7 +44,7 @@ export const App = () => {
       <hr />
       <LanguageList/>
       <hr />
-      <AlertButton/>
+      <AlertButton handleAlert={handleAlert}/>
       <hr />
       <InputField/>
       <hr />
