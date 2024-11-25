@@ -1,5 +1,5 @@
 import styles from './index.module.css'
-import PropTypes from 'prop-types'
+import propTypes from 'prop-types'
 
 export const Country = ({ info, width, height }) => {
   return (
@@ -10,13 +10,13 @@ export const Country = ({ info, width, height }) => {
   )
 }
 
-Country.PropTypes = {
-  info: PropTypes.exact({
-    imgUrl: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired
+Country.propTypes = {
+  info: propTypes.exact({
+    imgUrl: propTypes.string.isRequired,
+    name: propTypes.string.isRequired
   }).isRequired,
-  width: PropTypes.number,
-  height: PropTypes.number
+  width: propTypes.number,
+  height: propTypes.number
 }
 
 Country.defaultProps = {
