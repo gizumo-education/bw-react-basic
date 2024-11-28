@@ -7,6 +7,8 @@ export const LanguageList = () => {
     { id: 3, name: 'TypeScript', imgUrl: 'https://img.icons8.com/color/48/typescript.png' },
   ]
 
+//mapを使って繰り返し処理。language.imgUrlとlanguage.nameをオブジェクト内に含まれているだけ処理
+//keyを設置する
   return (
     <>
       <ul className={styles.wrapper}>
