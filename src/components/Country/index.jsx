@@ -1,7 +1,8 @@
 import styles from './index.module.css'
 import PropTypes from 'prop-types'
 
-export const Props = () => {
+// 問1
+export const Country = () => {
   return (
     <Country
     info = {{
@@ -14,7 +15,8 @@ export const Props = () => {
   )
 };
 
-export const Country = ({info , width , height}) => {
+// 問2
+export const Card = ({info , width , height}) => {
   return (
     <div>
       <img
@@ -27,10 +29,20 @@ export const Country = ({info , width , height}) => {
   )
 };
 
-Country.propTypes = {
+Card.propTypes = {
   info: PropTypes.exact({
     url: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired
   }),
   width: PropTypes.number , height: PropTypes.number
 };
+
+
+// export const Country = () => {
+//   return (
+//     <div>
+//       <img src={info.imgUrl} width={width} height={height} />
+//       <p className={styles.name}>{info.name}</p>
+//     </div>
+//   )
+// }

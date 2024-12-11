@@ -2,7 +2,7 @@ import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
 import Button from './components/Button'
 import {Profile} from './components/Profile/index.jsx'
-import {Props} from './components/Country/index.jsx'
+import {Country} from './components/Country/index.jsx'
 import { Card } from './components/Card/index.jsx'
 import {TodoItem} from './components/TodoItem/index.jsx'
 import {LanguageList} from './components/LanguageList/index.jsx'
@@ -24,8 +24,8 @@ export const App = () => {
     <hr />
       <Profile></Profile>
     <hr />
-      <Card>
-      <Props></Props>
+    <Card>
+      <Country></Country>
     </Card>
     <hr />
     <ul>
