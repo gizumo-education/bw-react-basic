@@ -8,6 +8,7 @@ import { TodoItem } from './components/TodoItem/index.jsx'
 import { LanguageList } from './components/LanguageList/index.jsx'
 import { AlertButton } from './components/AlertButton/index.jsx'
 import { InputField } from './components/InputField/index.jsx'
+import { CharacterImage } from './components/CharacterImage/index.jsx'
 
 export const App = () => {
   return(
@@ -23,16 +24,16 @@ export const App = () => {
   <hr />
       <Profile></Profile>
   <hr />
-      <Card>
-      <Country
-        width={120}
-        height={80}
-        info = {{
-                imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
-                name: 'アメリカ'
+    <Card>
+    <Country
+      width={120}
+      height={80}
+      info = {{
+              imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+              name: 'アメリカ'
               }}
       />
-      </Card>
+    </Card>
   <hr />
       <ul>
         <TodoItem name='Reactの学習' isToday={true} isCompleted={true} />
@@ -45,6 +46,8 @@ export const App = () => {
     <AlertButton></AlertButton>
   <hr />
     <InputField></InputField>
+  <hr />
+    <CharacterImage></CharacterImage>
   <hr />
     </div>
   )
