@@ -1,7 +1,9 @@
 import reactLogo from './assets/react.svg'
 import styles from './App.module.css'
 import Button from './components/Button'
-import {Profile} from './components/Profile/index.jsx'
+import { Profile } from './components/Profile/index.jsx'
+import { Country } from './components/Country/index.jsx'
+import { Card } from './components/Card/index.jsx'
 
 export const App = () => {
   return(
@@ -16,6 +18,17 @@ export const App = () => {
       <Button></Button>
       <hr />
       <Profile></Profile>
-   </div>
+      <hr />
+<Card>
+<Country
+width={120}
+height={80}
+info = {{
+        imgUrl: 'https://www.civillink.net/sozai/kokki100/pics2654.gif',
+        name: 'アメリカ'
+      }}
+/>
+</Card>
+    </div>
   )
 };
